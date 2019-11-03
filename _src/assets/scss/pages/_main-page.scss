@@ -1,6 +1,5 @@
 .main {
     border: solid black 2px;
-    height: 100%;
     width: 100%;
 
     // MAIN HERO
@@ -56,7 +55,7 @@
     &__info {
     background: $background;
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     font-family: $fontFamily;
     font-size: 1.3rem;
     line-height: 2rem;
@@ -108,7 +107,7 @@
 
     //  MAIN REASONS
     &__reasons {
-    border: 2px solid blue;
+    // border: 2px solid blue;
     
         &__container {
             background: $whiteColor;

@@ -1,0 +1,41 @@
+.footer {
+    border: solid 2px red;
+    background: $background;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    height: 8rem;
+    font-family: $fontFamily;
+    color: $mainColor;
+    &__copy {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__info {
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        &:link,
+	    &:visited,
+	    &:hover,
+	    &:active {
+            color: $mainColor;
+        }
+    }
+    @keyframes rotate {
+        from {
+        transform: perspective(100px) rotateY(0deg);
+        }
+        to {
+        transform: perspective(100px) rotateY(360deg);
+    }
+        
+    }
+}
