@@ -1,0 +1,27 @@
+.header__container {
+    background:rgb(223, 224, 250);
+    border: solid 2px $secondaryColor;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 0%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        width: 6rem;
+        height: 6rem; 
+    }
+    &__link {
+    font-size: 2rem;
+    color: $secondaryColor;
+    transition: all 1s ease-in-out;
+    &:hover {
+        font-size: 2.5rem;
+        }
+    }
+
+}
