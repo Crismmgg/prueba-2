@@ -1,8 +1,24 @@
-@import 'core/settings';
-@import 'core/links';
+@import "core/reset";
+@import "core/variables";
 
+/* 1rem = 10px */
+html {
+	font-size: 62.5%;
+}
 body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
 	margin: 0;
 	height: 100vh;
+	background: whitesmoke;
 }
+a {
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+	  text-decoration: none;
+	  
+	}
+}
+@import "./layout/header";
+@import "./pages/main-page";
+@import "./layout/footer";
