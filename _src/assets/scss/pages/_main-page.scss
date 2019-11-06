@@ -92,6 +92,10 @@
             font-size: 1.2rem;
             color: $secondaryColor;
             transition: all 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             &:hover {
             width: 10rem;
             height: 5rem;
